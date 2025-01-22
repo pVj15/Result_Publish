@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Login - Mohamed Sathak A.J. College Of Engineering</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 120px);
+        }
+
+        .login-container {
+            max-width: 400px;
+            width: 100%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container h2 {
+            color: green;
+            text-align: center;
+        }
+
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-container table {
+            width: 100%;
+            border-spacing: 10px;
+        }
+
+        .login-container table td {
+            padding: 5px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .login-container input[type="submit"] {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><b>Mohamed Sathak A.J. College Of Engineering</b></h1>
+        <h2><b>An Autonomus Institution</b></h2>
+        <p>Result Login Portal</p>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <h2>Login to View Results</h2>
+            <form action="/submit-login" method="post">
+                <table>
+                    <tr>
+                        <td><label for="register-number">Register Number:</label></td>
+                        <td><input type="text" placeholder="Enter your Register Number" id="register-number" name="register-number" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">Date of Birth:</label></td>
+                        <td><input type="date" id="dob" name="dob" required></td>
+                    </tr>
+                </table>
+                <div style="text-align: center; margin-top: 20px;">
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mohamed Sathak A.J. College Of Engineering. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
